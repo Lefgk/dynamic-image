@@ -99,9 +99,7 @@ module.exports = async function (req, res) {
     setHeader(res, headers);
 
     res.status(404).json({
-      message: e.toString().includes("ENOENT")
-        ? "Template not found"
-        : e.toString(),
+      message: e.toString().includes("ENOENT") ? e.toString() : e.toString(),
     });
   }
 };
