@@ -1,69 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- SSR[first~title~color: #ffed75;] -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{{base}}/css/base.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://animalfarm-nfts-qoab9ov2o-dog-poundnft.vercel.app/css/base.css"
-    /> -->
-    <title>Animal Farm NFT</title>
+    <title>Persian Blue</title>
     <style>
       body {
-        background: black;
-        color: black;
+        background-color: #1c39bb;
+        color: #f4f4f4;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 98vh;
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         overflow: hidden;
-        margin: 0;
       }
+
       main {
         position: fixed;
         z-index: 100;
-        width: 700px;
-        height: 700px;
+        margin-top: -3rem;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0 5%;
         overflow: hidden;
       }
-      img {
-        width: 100%;
-        height: 100%;
-      }
+
       p {
         text-align: center;
         margin: 0;
       }
-      .nftID {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 79.2%;
-        left: 38.4%;
-        font-size: 0.75em;
+
+      .title {
+        font-size: 145px;
         max-width: 90%;
-        font-weight: 600;
+        letter-spacing: 1.8px;
+        font-weight: 800;
         margin-bottom: 5px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
-      .taxReduction {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 85%;
-        left: 61.4%;
-        font-weight: 800;
-        font-size: 2em;
+
+      .content {
+        font-weight: 300;
+        font-size: 24px;
         max-width: 85%;
         display: -webkit-box;
         margin: 0 auto;
@@ -74,15 +67,11 @@
       }
     </style>
   </head>
+
   <body>
     <main>
-      <img
-        id="icon"
-        src="https://github.com/Lefgk/dynamic-image/blob/master/public/NFT.png?raw=true"
-        alt="Icon"
-      />
-      <p class="nftID">55</p>
-      <p class="taxReduction">23</p>
+      <p id="title" class="title">{{title}}</p>
+      <p class="content">{{content}}</p>
     </main>
     <!-- SVG -->
   </body>

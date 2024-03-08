@@ -38,7 +38,7 @@ module.exports = async function (req, res) {
     }
 
     template = templateEngine(template, options);
-
+    console.log(type);
     if (type === "html") {
       // Requested html
       setHeader(res, headers);
