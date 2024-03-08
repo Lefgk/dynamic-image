@@ -56,14 +56,15 @@ document.getElementById("generate").addEventListener("click", function (e) {
 });
 
 function generate() {
+  console.log(theme);
   let theme = document.getElementById("theme").value;
-  if (!theme || theme === "") theme = "yellowish-yellow";
+  if (!theme || theme === "") theme = "persian";
 
   let data = {
     nftID: document.getElementById("nftID").value,
     taxReduction: document.getElementById("taxReduction").value,
   };
-
+  console.log(data);
   if (!data.nftID || data.nftID === "") delete data.nftID;
   if (!data.taxReduction || data.taxReduction === "") delete data.taxReduction;
 
