@@ -1,0 +1,227 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_stakeManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_stakebusd",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_stakebnb",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserWithdrawnStakes",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "nftID",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "potentialAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dogsInLP",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "busdLP",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bnbLP",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pigsPendingBusd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pigsPendingBnb",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "taxReduction",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "endTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isAutoPool",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct NftReadContract.WithdrawnStakeInfoView2[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getWithdrawnStakeInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "nftID",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "potentialAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dogsInLP",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "busdLP",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bnbLP",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pigsPendingBusd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pigsPendingBnb",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "taxReduction",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "endTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isAutoPool",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct NftReadContract.WithdrawnStakeInfoView2",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lpCalc",
+    "outputs": [
+      {
+        "internalType": "contract LPToTokenCalculator",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nftPigMcStakingBnb",
+    "outputs": [
+      {
+        "internalType": "contract NftPigMcStakingBnb",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nftPigMcStakingBusd",
+    "outputs": [
+      {
+        "internalType": "contract NftPigMcStakingBusd",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stakeManager",
+    "outputs": [
+      {
+        "internalType": "contract StakeManagerV2",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
