@@ -1,0 +1,27 @@
+{
+  "name": "animalfarm-nfts",
+  "version": "1.0.0",
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": "^14"
+  },
+  "scripts": {
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "opengraph",
+    "og",
+    "vercel",
+    "dynamic"
+  ],
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chrome-aws-lambda": "^10.1.0",
+    "ethers": "^5.1.4",
+    "mongodb": "^4.1.3",
+    "puppeteer-core": "^10.4.0",
+    "qs": "^6.10.1"
+  }
+}

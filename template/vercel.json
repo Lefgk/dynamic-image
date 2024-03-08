@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "api/generate/[type]/[name].js": {
+      "includeFiles": "template/**"
+    },
+    "api/other/get-theme.js": {
+      "includeFiles": "template/**"
+    },
+    "api/random/[type].js": {
+      "includeFiles": "template/**"
+    },
+    "api/nft/[name].js": {
+      "includeFiles": "public/constants"
+    }
+  }
+}

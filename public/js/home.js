@@ -24,11 +24,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     var hash = window.location.hash.replace("#", "");
     var prev_data = JSON.parse(atob(hash));
 
-    if (prev_data.icon) document.getElementById("icon").value = prev_data.icon;
-    if (prev_data.title)
-      document.getElementById("title").value = prev_data.title;
-    if (prev_data.content)
-      document.getElementById("content").value = prev_data.content;
+    if (prev_data.nftID)
+      document.getElementById("nftID").value = prev_data.nftID;
+    if (prev_data.taxReduction)
+      document.getElementById("taxReduction").value = prev_data.taxReduction;
     if (prev_data.theme) {
       document.getElementById("theme").value = prev_data.theme;
       selectedTheme = prev_data.theme;
@@ -61,14 +60,12 @@ function generate() {
   if (!theme || theme === "") theme = "yellowish-yellow";
 
   let data = {
-    icon: document.getElementById("icon").value,
-    title: document.getElementById("title").value,
-    content: document.getElementById("content").value,
+    nftID: document.getElementById("nftID").value,
+    taxReduction: document.getElementById("taxReduction").value,
   };
 
-  if (!data.icon || data.icon === "") delete data.icon;
-  if (!data.title || data.title === "") delete data.title;
-  if (!data.content || data.content === "") delete data.content;
+  if (!data.nftID || data.nftID === "") delete data.nftID;
+  if (!data.taxReduction || data.taxReduction === "") delete data.taxReduction;
 
   var options = qs.stringify({ ...data, ref: "website" });
 
