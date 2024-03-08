@@ -76,7 +76,7 @@ function generate() {
   }
 
   var urls = {};
-
+  console.log(theme);
   if (theme === "random") {
     urls.html = `${base}api/random/html?${options}`;
     urls.svg = `${base}api/random/svg?${options}`;
