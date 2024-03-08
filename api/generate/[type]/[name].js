@@ -9,7 +9,7 @@ const { setHeader, headers } = require("../../../helpers/set-header");
 const logger = require("../../../logger");
 
 module.exports = async function (req, res) {
-  const { type, name, icon, title, content, buffer } = req.query;
+  const { type, name, nftID, taxReduction, buffer } = req.query;
   let start_time = Date.now();
 
   const base = getRootPath();
@@ -27,9 +27,8 @@ module.exports = async function (req, res) {
     );
 
     var options = {
-      icon: icon || "",
-      title: title || "Dynamic Image.",
-      content: content || "Dynamically generate images",
+      nftID: nftID || "",
+      taxReduction: taxReduction || "",
       base: base,
     };
 
