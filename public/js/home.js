@@ -1,7 +1,7 @@
 import qs from "https://cdn.skypack.dev/qs";
 
-const base = "/"; // for development with live-server use https://dynamic-image.vercel.app and a no-cors extension
-
+// const base = "/"; // for development with live-server use https://dynamic-image.vercel.app and a no-cors extension
+const base = "https://dynamic-image-rbar8vonn-lefgks-projects.vercel.app/";
 document.addEventListener("DOMContentLoaded", async function () {
   // render themes
   var allThemeOptions = `<option value="random">Random</option>`;
