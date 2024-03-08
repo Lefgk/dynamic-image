@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://animalfarm-nfts-qoab9ov2o-dog-poundnft.vercel.app/css/base.css"
     />
-    <title>Animal Farm NFT</title>
+    <title>BC NFT</title>
     <style>
       body {
         background: black;
@@ -169,7 +169,7 @@
     try {
       const signerOrProvider = new ethers.providers.JsonRpcProvider(
         "https://bsc-dataseed.binance.org"
-      ); //TODO should be ['https://bsc-dataseed.binance.org', 'https://bsc-dataseed1.defibit.io']
+      );
       const nftreadcontract = new ethers.Contract(
         contracts.nftreadcontract,
         abi,
