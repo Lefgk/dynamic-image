@@ -56,8 +56,9 @@ document.getElementById("generate").addEventListener("click", function (e) {
 });
 
 function generate() {
-  console.log(theme);
+  console.log("theme");
   let theme = document.getElementById("theme").value;
+  console.log(theme);
   if (!theme || theme === "") theme = "persian";
 
   let data = {

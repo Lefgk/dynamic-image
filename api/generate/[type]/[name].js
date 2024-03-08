@@ -9,6 +9,7 @@ const { setHeader, headers } = require("../../../helpers/set-header");
 const logger = require("../../../logger");
 
 module.exports = async function (req, res) {
+  console.log(req);
   const { type, name, nftID, taxReduction, buffer } = req.query;
   let start_time = Date.now();
 

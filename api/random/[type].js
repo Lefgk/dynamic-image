@@ -5,6 +5,7 @@ const qs = require("qs");
 const supportedTypes = ["png", "svg", "html"];
 
 module.exports = function (req, res) {
+  console.log(req);
   var query = req.query;
   var type = query.type;
   delete query.type;
